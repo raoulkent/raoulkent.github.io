@@ -5,11 +5,14 @@ import ProjectIcon from './ProjectIcon/';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className="app">
+        <div className="wrapper">
           <ProjectIcon projectName="raoul kenjir"/>
           <ProjectIcon projectName="sara kenjir"/>
-        </header>
+          <ProjectIcon projectName="John Smith"/>
+          <ProjectIcon projectName="Smith Johnson"/>
+          <ProjectIcon projectName="Mr Tooty"/>
+        </div>
       </div>
     );
   }
