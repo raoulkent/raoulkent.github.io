@@ -1,29 +1,11 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import jdenticon from 'jdenticon';
+import React from 'react';
+import Jdenticon from 'react-jdenticon';
 
-class ProjectIcon extends Component {
-    componentDidMount() {
-        jdenticon();
-    }
+const ProjectIcon = ({sideLength=150, projectName}) => {
 
-    render() {
-
-        const {sideLength, projectName} = this.props;
-
-        return (
-                <svg width={sideLength} height={sideLength} data-jdenticon-value={projectName}> </svg>
-        );
-    }
+    return (
+        <Jdenticon size={sideLength} value={projectName} />
+    );
 }
-
-ProjectIcon.defaultProps = {
-    sideLength: 150,
-}
-
-ProjectIcon.propTypes = {
-    projectName: PropTypes.string.isRequired,
-    sideLength: PropTypes.number,
-};
 
 export default ProjectIcon;

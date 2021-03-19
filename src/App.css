@@ -2,6 +2,7 @@
   width: 1000px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
   font-size: calc(10px + 2vmin);
   color: white;
 }
